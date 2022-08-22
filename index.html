@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/88cf9aa900.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <h1>Tip Cal</h1>
+    <form action="">
+        <div class="control">
+            <p>Enter Total Bill</p>
+            <p class="input">
+                $
+                <input type="number" id="totalBill" placeholder="0">
+            </p>
+        </div>
+        <div class="control">
+            <p>Choose Your Tip</p>
+            <select name="" id="tipPercent">
+                <option value="0" disabled selected>Select from here</option>
+                <option value="0.3">30%</option><option value="0.2">20%</option><option value="0.15">15%</option><option value="0.1">10%</option><option value="0.05">5%</option>
+            </select>
+        </div>
+    </form>
+    <p>Split the bill into</p>
+    <input type="number" name="" id="split" placeholder="0"> <br>
+    <button id="calculate">Calculate</button>
+    <div class="totalTip">
+        <p>Total Per Person</p>
+        <p class="tip">$ <span id="tip">0.00</span></p>
+    </div>
+   </div>
+</body>
+</html>
